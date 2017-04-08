@@ -1,21 +1,34 @@
 package oop.etc;
 
+import oop.etc.classes.동물;
+
 public class Example1 {
-    static int num1 = 1;
-    static int num2 = 2;
-    static int num3;
-
-    static {
-        num3 = num1 + num2;
-    }
-
-    public Example1() {
-        System.out.println("생성자 호출");
-    }
-
+    /**
+     * Call by value/reference
+     */
     public static void main(String[] args) {
-        System.out.println(num1);
-        System.out.println(num2);
-        System.out.println(num3);
+        int num = 100;
+        System.out.println("연산하기 전 num1 값 : " + num);
+        calc(num);
+        System.out.println("연산 후 num1 값 : " + num);
+
+        Integer num2 = new Integer(1000);
+        System.out.println("연산하기 전 num2 값 : " + num2);
+        calc(num2);
+        System.out.println("연산 후 num2 값 : " + num2);
+
+        동물 animal = new 동물();
+        System.out.println("이름 변경 전 동물 이름 : " + animal.이름());
+        animal.이름변경("고래");
+        System.out.println("이름 변경 후 동물 이름 : " + animal.이름());
+
+    }
+
+    static void calc(int num) {
+        num *= 2;
+    }
+
+    static void calc(Integer num) {
+        num *= 2;
     }
 }

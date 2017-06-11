@@ -12,8 +12,8 @@ public class Example1 {
     public static void main(String[] args) {
         List<동물> animals = Arrays.asList(new 동물(), new 포유류(), new 고래(), new 박쥐());
 
-        print1(animals);
-//        print2(animals);
+//        print1(animals);
+        print2(animals);
 //        print3(animals);
     }
 

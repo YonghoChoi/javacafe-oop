@@ -19,9 +19,13 @@ public class Example1 {
 
         동물 animal = new 동물();
         System.out.println("이름 변경 전 동물 이름 : " + animal.이름());
-        animal.이름변경("고래");
+        이름변경(animal);
         System.out.println("이름 변경 후 동물 이름 : " + animal.이름());
 
+    }
+
+    private static void 이름변경(동물 animal) {
+        animal.이름변경("고래");
     }
 
     static void calc(int num) {

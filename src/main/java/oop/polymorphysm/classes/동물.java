@@ -1,5 +1,7 @@
 package oop.polymorphysm.classes;
 
+import java.io.IOException;
+
 public class 동물 {
     String className;
 

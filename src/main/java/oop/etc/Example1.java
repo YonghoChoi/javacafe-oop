@@ -12,11 +12,6 @@ public class Example1 {
         calc(num);
         System.out.println("연산 후 num1 값 : " + num);
 
-        Integer num2 = new Integer(1000);
-        System.out.println("연산하기 전 num2 값 : " + num2);
-        calc(num2);
-        System.out.println("연산 후 num2 값 : " + num2);
-
         동물 animal = new 동물();
         System.out.println("이름 변경 전 동물 이름 : " + animal.이름());
         이름변경(animal);
